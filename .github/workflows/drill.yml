@@ -1,0 +1,12 @@
+name: Maintenance Drill
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Audit step
+        run: echo audit-ok
